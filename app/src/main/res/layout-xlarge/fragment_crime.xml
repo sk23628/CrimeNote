@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="layout.CrimeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top">
+
+        <TextView
+            android:layout_width="595dp"
+            android:layout_height="35dp"
+            android:text="    Title"
+            android:id="@+id/textView"
+            style="?android:listSeparatorTextViewStyle"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/crime_title"
+            android:hint="@string/crime_titl"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="595dp"
+            android:layout_height="wrap_content"
+            android:text="    Details"
+            android:id="@+id/textView2"
+            style="?android:listSeparatorTextViewStyle"
+            android:accessibilityLiveRegion="none"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/crime_date"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="false"
+                android:enabled="false"/>
+
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Solved"
+                android:id="@+id/crime_solved"
+                android:checked="false"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
